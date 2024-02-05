@@ -1,0 +1,1085 @@
+@import './fonts.css';
+@import './reset.css';
+@import './common.css';
+
+
+
+.container{
+  background: #0E0E0E;
+}
+
+
+.sc-about{
+  padding: 108px 70px 0px 70px;
+}
+.sc-about .desktop{
+  display: block;
+}
+.sc-about .mobile{
+  display: none;
+}
+.sc-about .about-main{
+  display: flex;
+  gap: 100px;
+  padding-bottom: 8rem;
+}
+.sc-about .about-main .about-left{
+  position: sticky;
+  top: 100px;
+  height: 594px;
+  width: 503px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.sc-about .about-main .about-left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sc-about .about-main .about-right .title-wrap{
+  position: relative;
+  /* background: #0f0; */
+  display: flex;
+  flex-direction: column;
+}
+
+.sc-about .about-main .about-right .title-01{
+  display: block;
+  color: #e4e4e4;
+  font-size: 160px;
+  font-family: "Cardinal Fruit Medium";
+  line-height: 100%;
+}
+.sc-about .about-main .about-right .title-02{
+  color: #e4e4e4;
+  font-size: 160px;
+  font-family: "Cardinal Fruit Italic";
+  margin-left: 330px;
+  margin-top: -30px;
+  font-style: italic;
+  line-height: 100%;
+  z-index: 2;
+
+}
+.sc-about .about-main .about-right .tag04{
+  position: absolute;
+  transform: rotate(30.298deg);
+  top: 0;
+  right: 40px;
+}
+.sc-about .about-main .about-right .tag05{
+  position: absolute;
+  left: 220px;
+  top: 70px;
+  animation-name: rotatebox05;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes rotatebox05{
+  0%{
+  transform: rotate(0);
+  }
+  100%{
+  transform: rotate(360deg);
+  }}
+
+.sc-about .about-main .about-right .tag06{
+  position: absolute;
+  transform: rotate(80deg);
+  right: 0;
+  top: 134px;
+}
+
+.sc-about .about-main .about-right .subdesc-01{
+  display: flex;
+  max-width: 50ch;
+  flex: 1;
+  margin-top: 30px;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* .sc-about .about-main .about-right .subdesc-01 i{
+  margin-right: 14px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ffffff58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin-top: 1.5px;
+  font-size: 12px;
+  font-weight: bold;
+} */
+.sc-about .about-main .about-right .subdesc-01 i{
+  margin-right: 16px;
+  display: flex;
+  width: 6px;height: 6px;
+  border-radius: 100px;
+  background: #ffffff6f;
+  margin-top: 11px;
+}
+.sc-about .about-main .about-right .title{
+  display: flex;
+  max-width: 50ch;
+  flex: 1;
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+}
+.sc-about .about-main .about-right .title.designer{
+  margin-top: 70px;
+}
+
+
+/* 어바웃 자기소개서:1300 769px*/
+@media (max-width:1220px) {
+  .sc-about .about-main{
+    gap: 80px;
+    padding-bottom: 8rem;
+  }
+  .sc-about .about-main .about-left{
+    top: 80px;
+    height: 544px;
+    flex: 1;
+    border-radius: 32px;
+  }
+  .sc-about .about-main .about-right{
+    flex: 1;
+  }
+  .sc-about .about-main .about-right .title-wrap{}
+  .sc-about .about-main .about-right .title-01{
+    font-size: 150px;
+  }
+  .sc-about .about-main .about-right .title-02{
+    font-size: 150px;
+    margin-left: 0px;
+    margin-top: -20px;
+
+  }
+  .sc-about .about-main .about-right .tag04{
+    top: 0;
+    left: 260px;
+    width: 70px;
+    height: 70px;
+  }
+  .sc-about .about-main .about-right .tag05{
+    left: 180px;
+    top: 70px;
+    width: 144px;
+    height: 144px;
+  }
+
+  .sc-about .about-main .about-right .tag06{
+    left: 0px;
+    top: 144px;
+    width: 64px;
+    height: 64px;
+  }
+
+
+  .sc-about .about-main .about-right .subdesc-01{
+    max-width: 40ch;
+  }
+  .sc-about .about-main .about-right .title{
+    max-width: 40ch;
+  }
+
+}
+
+/* 768px 320 */
+@media (max-width:768px){
+  .container{
+    background: #0E0E0E;
+    padding-bottom: 60px;
+  }
+  .sc-about .desktop{
+    display: none;
+  }
+  .sc-about .mobile{
+    display: block;
+  }
+
+
+  .sc-about{
+    padding: 20px 20px 0;
+  }
+  .sc-about .about-main{
+    gap: 40px;
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
+  .sc-about .about-main .about-left{
+    position: initial;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 4px;
+  }
+  .sc-about .about-main .about-left img{
+  }
+  .sc-about .about-main .about-right .title-wrap{
+    /* background: #0f0; */
+  }
+  
+  .sc-about .about-main .about-right .title-01{
+    line-height: 110px;
+    font-size: 110px;
+  }
+  .sc-about .about-main .about-right .title-02{
+    font-size: 110px;
+    margin-left: 0px;
+    line-height: 110px;
+
+  
+  }
+  .sc-about .about-main .about-right .tag04{
+    top: 0;
+    left: 200px;
+    width: 49px;
+    height: 49px;
+  }
+  .sc-about .about-main .about-right .tag05{
+    top: 48px;
+    left: 140px;
+    width: 96px;
+    height: 96px;
+  }
+  .sc-about .about-main .about-right .tag06{
+    top: 100px;
+   left: 0px;
+    width: 48px;
+    height: 48px;
+  }
+  
+
+
+
+  .sc-about .about-main .about-right .subdesc-01.first{
+    margin-top: 30px;
+  }
+  .sc-about .about-main .about-right .subdesc-01{
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 27px;
+  }
+  .sc-about .about-main .about-right .subdesc-01 i{
+    margin-top: 9px;
+  }
+  .sc-about .about-main .about-right .title{
+    max-width: 100%;
+    width: 100%;
+    font-size: 20px;
+  }
+  .sc-about .about-main .about-right .title.designer{
+    margin-top: 50px;
+  }
+}
+  
+  
+  
+
+
+
+
+
+
+
+
+.sc-resume{
+  margin-bottom: 60px;
+  padding: 0 0 150px 0;
+  margin-top: 120px;
+  border-radius: 100px;
+  background: #FFF;
+  position: relative;
+}
+.sc-resume .headline{
+  padding-top: 130px;
+  text-align: center;
+  z-index: 100;
+}
+.sc-resume .headline .small{
+  font-family: 'Manrope', 'sans-serif';
+  font-size: 15px;
+  font-weight: 400;
+}
+.sc-resume .headline .title{
+  font-family: 'Manrope', 'sans-serif';
+  margin-top: 8px;
+  font-size: 140px;
+  font-weight: 800;
+  z-index: 100;
+}
+.sc-resume .headline .title .wrap{
+  position: relative;
+  display: inline-block;
+  /* background: #f00; */
+  width: 870px;
+}
+.sc-resume .headline .subtitle{
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.sc-resume .tag01{
+  position: absolute;
+  border-radius: 100px;
+  background: #FF9CDD;
+  transform: rotate(11.016deg);
+  padding: 19px 30px;
+  justify-content: center;
+  align-items: center;
+  color: #0E0E0E;
+  font-weight: 500;
+  font-size: 18px;
+  top: 80px;
+  right: 20px;
+
+}
+.sc-resume .tag02{
+  position: absolute;
+  border-radius: 100px;
+  background: #FED847;
+  transform: rotate(-12.853deg);
+  padding: 19px 30px;
+  justify-content: center;
+  align-items: center;
+  color: #0E0E0E;
+  font-weight: 500;
+  font-size: 18px;
+  bottom: 10px;
+  right: 95px;
+}
+
+
+
+
+
+/* 이력서 타이틀:1300 사이즈 */
+
+@media (max-width:1300px) {
+  .sc-resume{
+    margin-top: 300px;
+    margin-bottom: 60px;
+    padding: 0 0 170px 0;
+    margin-top: 130px;
+    border-radius: 60px;
+    background: #FFF;
+    position: relative;
+  }
+  .sc-resume .headline .small{
+    font-size: 14px;
+  }
+  .sc-resume .headline .title{
+    margin-top: 8px;
+    font-size: 110px;
+  }
+
+  .sc-resume .headline .title .wrap{
+    width: 680px;
+    /* width: 870px; */
+  }
+  .sc-resume .headline .subtitle{
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .sc-resume .tag01{
+    padding: 14px 18px;
+    font-size: 15px;
+    top: 70px;
+    right: 25px;
+  }
+  .sc-resume .tag02{
+    padding: 14px 18px;
+    font-size: 15px;
+    bottom: 3px;
+    right: 65px;
+  }
+
+
+
+
+}
+/* 이력서 타이틀:768 사이즈 */
+@media (max-width:768px) {
+  .sc-resume{
+    padding: 0 0 80px 0;
+    margin-top: 40px;
+    border-radius: 40px;
+    margin-bottom: 0px;
+  }
+
+  .sc-resume .headline{
+    padding-top: 60px;
+  }
+  .sc-resume .headline .small{
+    font-size: 13px;
+  }
+  .sc-resume .headline .title{
+    margin-top: 6px;
+    font-size: 50px;
+  }
+  .sc-resume .headline .title .wrap{
+    width: 320px;
+  }
+  .sc-resume .headline .subtitle{
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .sc-resume .tag01{
+    padding: 7px 12px;
+    font-size: 9px;
+    top: 30px;
+    right: 0px;
+  }
+  .sc-resume .tag02{
+    padding: 7px 12px;
+    font-size: 9px;
+    bottom: -4px;
+    right: 35px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sc-resume .swiper.desktop{
+  display: block;
+}
+.sc-resume .swiper.mobile{
+  display: none;
+}
+.sc-resume .swiper{
+  width: 100%;
+  height: 100%;
+  padding: 90px 80px 0 80px;
+  overflow: hidden;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide{
+  width: 380px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide > span{
+  display: block;
+  border: 1px solid #CECECE;
+  border-radius: 32px;
+}
+
+
+/* ********* 이력서 - 기본정보********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .info-box{
+  padding: 34px;
+  width: 380px;
+  height: 380px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .info-box .tag-green{
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Manrope', 'sans-serif';
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border-radius: 100px;
+  background: #2ED06E;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .info-box .title{
+  padding-left: 56px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  margin-top: 46px;
+  margin-bottom: 16px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .info-box p{
+  padding-left: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+
+
+
+/* ********* 이력서 -학력********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education{
+  width: 380px;
+  height: 380px;
+  border-radius: 32px;
+  padding: 34px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .tag-green{
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Manrope', 'sans-serif';
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border-radius: 100px;
+  background: #2ED06E;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .title{
+  padding-left: 56px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  margin-top: 46px;
+  margin-bottom: 16px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-top{
+  padding-left: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-top .university{
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-top .university i{
+  width: 4px;
+  height: 4px;
+  background: #E4E4E4;
+  display: inline-block;
+  margin: 0 12px;
+  vertical-align: 4px;
+  border-radius: 100%;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-top .gray{
+  color: #6E6E6E;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-bottom{
+  margin-top: 20px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-bottom span{
+  display: block;
+  padding-left: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-bottom .gray{
+  color: #6E6E6E;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+/* ********* 이력서 -경력********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career {
+  width: 380px;
+  height: 380px;
+  border-radius: 32px;
+  padding: 34px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .tag-green{
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Manrope', 'sans-serif';
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border-radius: 100px;
+  background: #2ED06E;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .title{
+  padding-left: 56px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  margin-top: 46px;
+  margin-bottom: 16px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-top{
+  padding-left: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-top .company i{
+  width: 4px;
+  height: 4px;
+  background: #E4E4E4;
+  display: inline-block;
+  margin: 0 12px;
+  vertical-align: 4px;
+  border-radius: 100%;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-top .gray{
+  display: block;
+  color: #6E6E6E;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-bottom{
+  padding-left: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-bottom span{
+  display: block;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-bottom .gray{
+  color: #6E6E6E;
+}
+
+
+
+
+
+
+
+
+/* ********* 이력서 - 디자인스킬********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design {
+  width: 380px;
+  height: 380px;
+  border-radius: 32px;
+  padding: 34px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .tag-green{
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Manrope', 'sans-serif';
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border-radius: 100px;
+  background: #2ED06E;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .title{
+  padding-left: 56px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  margin-top: 46px;
+  margin-bottom: 20px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-list{
+  padding-left: 56px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item{
+  margin-bottom: 17px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item span{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .progress{
+  position: relative;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .progress .line{
+  width: 198px;
+  height: 4px;
+  background: #D9D9D9;
+  border-radius: 5px;
+  margin: 6px 0 6px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .progress .line-on{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 198px;
+  height: 4px;
+  background: #000;
+  border-radius: 5px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .progress .line-on.photoshop{
+  width: 158px;
+  height: 4px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .progress .line-on.illustrator{
+  width: 158px;
+  height: 4px;
+}
+
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .text{
+  padding-left: 93px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .em{
+  font-weight: 700;
+  font-size: 15px;
+}
+
+
+
+
+
+/* ********* 이력서 - 퍼블스킬********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish {
+  width: 380px;
+  height: 380px;
+  border-radius: 32px;
+  padding: 34px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .tag-green{
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Manrope', 'sans-serif';
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border-radius: 100px;
+  background: #2ED06E;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .title{
+  padding-left: 56px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  margin-top: 46px;
+  margin-bottom: 20px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-list{
+  padding-left: 56px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item{
+  margin-bottom: 17px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item span{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress{
+  position: relative;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line{
+  width: 198px;
+  height: 4px;
+  background: #D9D9D9;
+  border-radius: 5px;
+  margin: 6px 0 6px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 198px;
+  height: 4px;
+  background: #000;
+  border-radius: 5px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on.html{
+  width: 139px;
+  height: 4px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on.sketch{
+  width: 158px;
+  height: 4px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on.pigma{
+  width: 139px;
+  height: 4px;
+}
+
+/* 피그마/스케치 툴 텍스트 사이즈** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .text.sketch{
+  padding-left: 93px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .text.pigma{
+  padding-left: 85px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .text{
+  padding-left: 30px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .em{
+  font-weight: 700;
+  font-size: 15px;
+}
+
+
+/* initial */
+
+/* 이력서 좌우스와이퍼:768 사이즈 */
+@media (max-width:768px) {
+  .sc-resume .swiper.desktop{
+    display: none;
+  }
+  .sc-resume .swiper.mobile{
+    display: block;
+  }
+
+
+
+
+.sc-resume .swiper{
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px 0 20px;
+  overflow: hidden;
+}
+.sc-resume .swiper .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide > span{
+  border-radius: 24px;
+}
+
+
+/* ********* 이력서 - 기본정보********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .info-box{
+  padding: 28px 28px 40px 28px;
+  width: 100%;
+  height: 100%;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .info-box .tag-green{
+  font-size: 11px;
+  padding: 8px 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .info-box .title{
+  padding-left: 18px;
+  margin-top: 26px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .info-box p{
+  padding-left: 18px;
+
+}
+
+
+
+
+/* ********* 이력서 -학력********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education{
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  padding: 28px 28px 40px 28px;
+  
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .tag-green{
+  font-size: 11px;
+  padding: 8px 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .title{
+  padding-left: 18px;
+  margin-top: 26px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-top{
+  padding-left: 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-top .university{
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-top .university i{
+  width: 3px;
+  height: 3px;
+  margin: 0 8px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-top .gray{
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-bottom{
+  margin-top: 20px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-bottom span{
+  padding-left: 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .education .edu-bottom .gray{
+}
+
+
+
+
+
+
+
+/* ********* 이력서 -경력********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  padding: 28px 28px 40px 28px;
+
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .tag-green{
+  font-size: 11px;
+  padding: 8px 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .title{
+  padding-left: 18px;
+  margin-top: 26px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-top{
+  padding-left: 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-top .company i{
+  width: 3px;
+  height: 3px;
+  margin: 0 8px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-top .gray{
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .career .career-bottom{
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/* ********* 이력서 - 디자인스킬********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  padding: 28px 46px 40px 28px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .tag-green{
+  font-size: 11px;
+  padding: 8px 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .title{
+  padding-left: 18px;
+  margin-top: 26px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-list{
+  padding-left: 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item{
+  margin-bottom: 17px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item span{
+  font-size: 14px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .text{
+  padding-left: 84px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .em{
+  font-weight: 700px;
+  font-size: 15
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .design .graph-item .progress .line{
+  width: 186px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on.photoshop{
+  width: 158px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on.illustrator{
+  width: 158px;
+}
+
+
+
+
+/* ********* 이력서 - 퍼블스킬********** */
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  padding: 28px 46px 40px 28px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .tag-green{
+  font-size: 12px;
+  padding: 8px 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .title{
+  padding-left: 18px;
+  margin-top: 26px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-list{
+  padding-left: 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item{
+  margin-bottom: 17px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item span{
+  font-size: 14px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line{
+  width: 186px;
+}
+
+
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on.pigma{
+  width: 134px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on.html{
+  width: 134px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .progress .line-on.sketch{
+  width: 158px;
+}
+
+
+
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .text{
+  padding-left: 18px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .text.sketch{
+  padding-left: 81px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .text.pigma{
+  padding-left: 73px;
+}
+.sc-resume .swiper .swiper-wrapper .swiper-slide .publish .graph-item .em{
+  font-weight: 700px;
+  font-size: 15px;
+}
+
+  
+}
